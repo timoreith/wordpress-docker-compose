@@ -12,3 +12,4 @@ configure:
 
 	wp option update siteurl ${WORDPRESS_WEBSITE_URL}
 	wp rewrite structure $(WORDPRESS_WEBSITE_POST_URL_STRUCTURE)
+	wp config set WP_DEBUG $(WORDPRESS_WP_DEBUG)
